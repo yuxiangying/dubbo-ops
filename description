@@ -1,0 +1,16 @@
+一、Dubbo监控平台部署
+1、到dubbo-admin下面打包一下
+incubator-dubbo-ops-master/dubbo-admin
+mvn clean package
+2、完成后，到该目录target下面发现一个jar，cmd运行
+java -jar dubbo-admin-0.0.1-SNAPSHOT.jar
+3、访问Dubbo管理平台
+http://localhost:7001/
+输入账号密码root/root
+二、Dubbo监控平台配置
+在官方下载的incubator-dubbo-ops-master/dubbo-monitor-simple下面
+使用maven命令打包一下
+mvn clean package
+然后在target文件夹下面会生成
+dubbo-monitor-simple-2.0.0-assembly.tar.gz压缩文件夹，我们解压一下，然后
+在dubbo-monitor-simple-2.0.0-assembly/dubbo-moitor-simple-2.0.0/assembly.bin文件夹下面可以看到start.bat文件，start.sh是linux系统的。win系统可以点击start.bat运行，运行之后访问127.0.0.1:8080，可以看到Dubbo官方提供的一个监控平台页面
